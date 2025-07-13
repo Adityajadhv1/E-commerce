@@ -1,0 +1,394 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BuzzBuy - Your Online Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+            background: linear-gradient(rgb(31,37,37));
+            background-size: cover;
+            padding: 100px 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .product-card {
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .footer {
+            background-color: #343a40;
+            color: white;
+            padding: 40px 0;
+        }
+        .rating {
+            color: #ffc107;
+        }
+        span{
+            color: crimson;
+        }
+        a{
+          text-decoration: none;
+        }
+        .logo{
+          color: aliceblue;
+          font-weight: 500;
+          font-size: 27px;
+        }
+
+ 
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a href="#" class="logo">Buzz<span>Buy.</span>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Category">Category</a></li>
+          <li class="nav-item"><a class="nav-link" href="#discount">Discount</a></li>
+          <li class="nav-item"><a class="nav-link" href="#products">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Cart <i class="fas fa-shopping-cart"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+ 
+   <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold ">Welcome to Buzz<span>Buy</span></h1>
+            <p class="lead">Discover amazing products at unbeatable prices</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5" id="Category">
+        <div class="container">
+            <h2 class="text-center mb-5 mt-2">Shop by Category</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="electronc.png.jpg" class="card-img-top" alt="Electronics">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Electronics</h5>
+                            <a href="#" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="fashion.png.jpg" class="card-img-top" alt="Fashion">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fashion</h5>
+                            <a href="#" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="homegarden.png.jpg" class="card-img-top" alt="Home & Garden">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Home & Garden</h5>
+                            <a href="#" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="card h-100">
+                        <img src="sports.jpg" class="card-img-top" alt="Sports">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Sports</h5>
+                            <a href="#" class="btn btn-outline-primary">Browse</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5 bg-light" id="products">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="mt-3">Featured Products</h2>
+                <a href="#" class="btn btn-outline-primary">View All</a>
+            </div>
+            <div class="row">
+                <!-- Product 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="headset.png" class="card-img-top" alt="Product 1">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-warning text-dark">New</span>
+                                <span class="text-danger">$199.99</span>
+                            </div>
+                            <h5 class="card-title mt-2">Wireless Headphones</h5>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-muted">(42)</span>
+                            </div>
+                            <p class="card-text">Premium wireless headphones with noise cancellation.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="smart.jpg" class="card-img-top" alt="Product 2">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-success">Sale</span>
+                                <div>
+                                    <span class="text-danger">$89.99</span>
+                                    <small class="text-muted text-decoration-line-through ms-1">$129.99</small>
+                                </div>
+                            </div>
+                            <h5 class="card-title mt-2">Smart Watch</h5>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span class="text-muted">(36)</span>
+                            </div>
+                            <p class="card-text">Fitness tracker with heart rate monitor.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="speaker.jpg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-info">Popular</span>
+                                <span class="text-danger">$49.99</span>
+                            </div>
+                            <h5 class="card-title mt-2">Bluetooth Speaker</h5>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span class="text-muted">(128)</span>
+                            </div>
+                            <p class="card-text">Portable speaker with 20 hours battery life.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card product-card h-100">
+                        <img src="cam.jpg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="badge bg-danger">Hot</span>
+                                <span class="text-danger">$599.99</span>
+                            </div>
+                            <h5 class="card-title mt-2">4K Camera</h5>
+                            <div class="rating mb-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span class="text-muted">(87)</span>
+                            </div>
+                            <p class="card-text">Professional 4K camera with 3 lenses.</p>
+                        </div>
+                        <div class="card-footer bg-transparent">
+                            <button class="btn btn-primary w-100">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offer -->
+    <section class="py-5 bg-primary-subtle text-white" id="discount">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-dark">
+                    <h2>Summer Sale - Up to 50% Off</h2>
+                    <p class="lead">Don't miss our biggest sale of the year. Limited time offer!</p>
+                    <div class="d-flex mb-4">
+                        <div class="me-3 text-center">
+                            <div class="display-4 fw-bold">03</div>
+                            <div>Days</div>
+                        </div>
+                        <div class="me-3 text-center">
+                            <div class="display-4 fw-bold">12</div>
+                            <div>Hours</div>
+                        </div>
+                        <div class="me-3 text-center">
+                            <div class="display-4 fw-bold">45</div>
+                            <div>Minutes</div>
+                        </div>
+                        <div class="text-center">
+                            <div class="display-4 fw-bold">30</div>
+                            <div>Seconds</div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-light btn-lg">Shop the Sale</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="discountt.jpg" alt="Special Offer" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- customr review -->
+    <section class="py-5" id="reviews">
+        <div class="container">
+            <h2 class="text-center mb-5">What Our Customers Say</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Great products and fast shipping! I've ordered multiple times and always been satisfied with my purchases."</p>
+                            <div class="mt-3">
+                                <img src="sarah.png.jpg" class="img-fluid" alt="Customer 1">
+                                <h5 class="mb-0">Sarah Johnson</h5>
+                                <p class="text-muted">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="card-text">"Excellent customer service. Had an issue with my order and it was resolved quickly and professionally."</p>
+                            <div class="mt-3">
+                                <img src="michael.png.jpg" class="img-fluid" alt="Customer 2">
+                                <h5 class="mb-0">Michael Chen</h5>
+                                <p class="text-muted">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <div class="rating mb-3">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="card-text">"Love the quality of the products I've purchased. Prices are competitive and the website is easy to use."</p>
+                            <div class="mt-3">
+                                <img src="davis.png.jpg" class="img-fluid" alt="Customer 3">
+                                <h5 class="mb-0">David Wilson</h5>
+                                <p class="text-muted">Verified Buyer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h2>Subscribe for alerts</h2>
+                    <p class="lead">Get the latest updates on new products and upcoming sales</p>
+                    <form class="mt-4">
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Your email address" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Buzz<span>Buy.</span></h5>
+                    <p>Your one-stop shop for all your needs. Quality products at affordable prices.</p>
+                    <div class="mt-3">
+                        <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Home</a></li>
+                        <li><a href="#" class="text-white">Products</a></li>
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">My Account</a></li>
+                        <li><a href="#" class="text-white">Order Tracking</a></li>
+                        <li><a href="#" class="text-white">Wishlist</a></li>
+                    </ul>
+                    </div>
+               </div>
+           </div>
+        </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script></body>
+</html>
